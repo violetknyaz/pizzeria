@@ -1,0 +1,422 @@
+@import 'fonts.css';
+
+/* =================================================== SETTINGS START ========================================== */
+:root{
+    --f100: 'Montserrat Thin';
+    --f300: 'Montserrat Light';
+    --f400: 'Montserrat Normal';
+    --f700: 'Montserrat Bold';
+    --f900: 'Montserrat Black';
+    --bg_white:#ffffff;
+    --bg_dark:#060503;
+    --nava_bg:#68bf3b;
+    --textwhite:#ffffff;
+    --a_bg:#68cd17;
+    --a_bg1: #3d8801;
+    --h1_color: #3d8801;
+    --text_grey: #bdbdbd;
+    --h2_color: #e1f5d0;
+    --sale_bg: #68cd16;
+    --h3-color: #a6a6a6;
+    --col-1:calc(100%/12*1);
+    --col-2:calc(100%/12*2);
+    --col-3:calc(100%/12*3);
+    --col-4:calc(100%/12*4);
+    --col-5:calc(100%/12*5);
+    --col-6:calc(100%/12*6);
+    --col-7:calc(100%/12*7);
+    --col-8:calc(100%/12*8);
+    --col-9:calc(100%/12*9);
+    --col-10:calc(100%/12*10);
+    --col-11:calc(100%/12*11);
+    --col-12:calc(100%/12*12);
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--f400);
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* border: 1px red solid; */
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    /* border: 1px blue solid; */
+}
+.col-4{
+    width: var(--col-4);
+    padding: 0 15px;
+    /* border: 1px yellow solid; */
+}
+.col-8{
+    width: var(--col-8);
+}
+.col-3{
+    width: var(--col-3);
+}
+.col-12{
+    width: var(--col-12);
+    padding: 0 15px;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+/* =================================================== SETTINGS END ========================================== */
+
+/* =================================================== HEADER START ========================================== */
+header{
+    height: 768px;
+    background: url(../images/header_bg.jpg) no-repeat center /cover;
+}
+header .container{
+    padding-top: 30px;
+}
+header a{
+    color: var(--textwhite);
+    display: block;
+}
+.logo{    
+    font-family: var(--f700);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.callback{
+    padding: 17px 27px;
+    background: var(--nava_bg);
+    font-family: var(--f400);
+    font-size: 16px;
+    border-radius: 30px;
+}
+.tel{
+    margin-right: 50px;
+    font-family: var(--f400);
+    font-size: 24px;
+    padding: 17px 27px;
+}
+header nav{
+    margin-bottom: 180px;
+}
+header .hp p{
+    color: var(--textwhite);
+    text-transform: uppercase;
+}
+header .hp p:nth-child(1){
+    font-family: var(--f900);
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+header .hp p:nth-child(2){
+    font-family: var(--f900);
+    font-size: 72px;
+    margin-bottom: 40px;
+}
+header .hp p:nth-child(3){
+    font-family: var(--f400);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+header .hp a:nth-child(4){
+font-family: var(--f400);
+font-size: 16px;
+padding: 18px 44px 20px;
+background: linear-gradient(to bottom,#68cd17,#3d8801);
+display: inline-block;
+border-radius: 25px;
+line-height: 12px;
+}
+/* =================================================== HEADER END ========================================== */
+
+/* =================================================== MAIN START ========================================== */
+main{
+    background: var(--bg_white);
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+.c1{
+    margin-bottom: 67px;
+}
+.c1 .row img:nth-child(1){
+    max-width: var(--col-4);
+    width: 100%;
+}
+.c1 h2{
+    font-family: var(--f700);
+    font-size: 36px;
+    color: var(--nava_bg);
+    margin-bottom: 65px;
+}
+.c1 p{
+    color: var(--text_grey);
+    font-family: var(--f400);
+    font-size: 18px;
+    line-height: 36px;
+}
+.c1 span{
+    font-family: var(--f700);
+    font-size: 24px;
+    color: var(--text_grey);
+    margin-right: 62px;
+}
+.c2 .row{
+    margin-top: 50px;
+}
+.c2{
+    margin-bottom: 150px;
+}
+.c2 h2{
+    font-family: var(--f700);
+    font-size: 36px;
+    color: var(--h2_color);
+}
+.c2 .menu-img{
+    position: relative;
+    display: flex;
+}
+.c2 .menu-img span{
+    color: var(--textwhite);
+    background: var(--sale_bg);
+    font-family: var(--f700);
+    font-size: 18px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: block;
+    line-height: 14px;
+    padding: 23px 8px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.menu-text{
+    padding-top: 30px;
+}
+.c2 .menu-text h3{
+    color: var(--h3-color);
+    font-family: var(--f700);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.c2 .menu-text li{
+    color: var(--h3-color);
+    font-family: var(--f400);
+    font-size: 14px;
+    line-height: 24px;
+}
+.c2 .menu-buy{
+    align-items: flex-end;
+    padding-top: 46px;
+}
+.c2 .menu-buy p{
+    font-family: var(--f300);
+    font-size: 18px;
+    color: var(--h3-color); 
+    margin-bottom: 28px;
+}
+.c2 .menu-buy span{
+    font-family: var(--f700);
+    font-size: 30px;
+    color: var(--h3-color);
+}
+.c2 .menu-buy a{
+    color: var(--textwhite);
+    font-family: var(--f400);
+    font-size: 16px;
+    padding: 18px 33px 18px;
+    background: linear-gradient(to bottom,#68cd17,#3d8801);
+    border-radius: 25px;
+    line-height: 12px;
+}
+.c3 img{
+    margin-bottom: 28px;
+}
+.c3 h4{
+    font-family: var(--f700);
+    font-size: 14px;
+    color: var(--h3-color);
+    margin-bottom: 19px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+.c3 p{
+    font-family: var(--f400);
+    font-size: 16px;
+    color: var(--h3-color);
+    line-height: 24px;
+    text-align: center;
+}
+/* =================================================== MAIN END ========================================== */
+
+/* =================================================== FOOTER START ========================================== */
+footer{
+    background: var(--bg_dark);
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
+footer nav{
+    margin-bottom: 50px;
+}
+footer a{
+    color: var(--textwhite);
+    display: block;
+}
+footer p{
+    font-family: var(--f100);
+    font-size: 16px;
+    color: var(--textwhite);
+    text-align: center;
+}
+/* =================================================== FOOTER END ========================================== */
+
+/* =================================================== ADAPTATION START ========================================== */
+@media(max-width:1075px){
+    .w-md-50{
+        width: 50%;
+    }
+    main .c2{
+        width: 80%;
+    }
+    .d-md-flex{
+        display: flex;
+    }
+    .w-md-100{
+        width: 100%;
+    }
+    .c1 .row{
+        align-items: center;
+        justify-content: center;
+    }
+    .justify-content-md-between{
+        justify-content: space-between;
+    }
+    main .c2 .menu-buy{
+        align-items: center;
+    }
+    main .c2 .menu-buy a{
+       padding: 5px 10px;
+       text-align: center; 
+       line-height: 20px;
+       border-radius: 10px;
+    }
+    .flex-md-row{
+        flex-direction: row;
+    }
+    .justify-content-md-center{
+        justify-content: center;
+    }
+    .flex-md-column{
+        flex-direction: column;
+    }
+    .flex-md-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-md-nowrap{
+        flex-wrap: nowrap;
+    }
+    .alignitems-md-center{
+        align-items: center;
+    }
+    .d-md-ib{
+        display: inline-block;
+    }
+    .nameb{
+       width: var(--col-4);
+       display: flex;
+       flex-direction: column;
+      justify-content: center; 
+    }
+   .buyer h4, p{
+      width: 100%;
+   }
+   main .c3 .buyer{
+        justify-content: center;
+   }
+}
+@media(max-width:914px){
+    main .c2{
+        justify-content: center;
+    }
+}
+@media(max-width:790px){
+    .buyer{
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .nameb{
+        width: 50%;
+    }  
+}
+@media(max-width:750px){
+    .w-sm-100{
+        width: 100%;
+    }
+    main .c1 .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .c1 img{
+        margin-bottom: 20px;
+    }
+    main .c1 h2{
+        font-size: 25px;
+    }
+}
+@media(max-width:685px){
+    .d-sm-block{
+        display: block;
+    }
+    header, footer nav ul li a{
+        text-align: center;
+    }
+    
+}
+@media(max-width:515px){
+    nav{
+        display: block;
+    }
+}
+@media(max-width:482px){
+   nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+/* =================================================== ADAPTATION END ========================================== */
